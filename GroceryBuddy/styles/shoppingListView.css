@@ -1,0 +1,265 @@
+
+/* // handleliste */
+.shopping_list_container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  max-width: 600px;
+  margin: 2rem auto;
+  padding: 1rem;
+  border: 2px solid #66bb6a;
+  border-radius: 8px;
+  background-color: white;
+}
+
+.shopping_list_name {
+  flex: 1;
+  max-width: 250px;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 14px;
+}
+
+.shopping_list_confirm {
+  width: 200px;
+  padding: 10px 15px;
+  border: solid 2px #66bb6a;
+  border-radius: 5px;
+  font-size: 14px;
+  cursor: pointer;
+  
+  margin: 1rem auto 0 auto; 
+}
+
+
+
+  /*Produktdel og borddel */
+
+.product-container h2 {
+  color: #333;
+  margin-bottom: 1rem;
+  font-size: 1.5rem;
+  text-align: left;
+}
+
+
+.product-input-group {
+  display: flex;
+  gap: 0.5rem;
+  width: 100%;
+  justify-content: flex-start; 
+  margin-bottom: 1rem;
+}
+
+
+.product-input-group input {
+  flex: 1;
+  max-width: 250px;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 14px;
+  margin-left: 8px;
+}
+
+.product-input-group button {
+  padding: 10px 15px;
+  border: none;
+  background-color: transparent;
+  border: 1px solid #66bb6a;
+  color: #66bb6a;
+  font-size: 14px;
+  border-radius: 5px;
+  cursor: pointer;
+
+}
+
+.product-input-group button:hover {
+ background-color: #e8f5e9;
+  text-decoration: underline;
+}
+
+
+.product-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 1rem;
+  max-width: 600px;
+  text-align: left;
+
+}
+
+.product-table list{
+  border: solid 2px #81c784;
+  font-weight: bold;
+  text-align: left;
+}
+
+.product-table th, .product-table td {
+  border: 1px solid #ddd;
+  text-align: left;
+  padding: 10px;
+  font-size: 14px;
+}
+
+.product-table th {
+  background-color: #81c784;
+  color: white;
+  font-weight: bold;
+  text-align: left;
+}
+
+.product-table tr:nth-child(even) {
+  background-color: #f9f9f9;
+}
+
+
+.product-actions {
+  display: flex;
+  gap: 5px;
+}
+
+
+.product-table button {
+  padding: 6px 10px;
+  border: none;
+  font-size: 12px;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: opacity 0.2s;
+}
+
+
+.editButton {
+  background-color: #2196F3; /* #ffa726*/
+  color: white;
+}
+
+.editButton:hover {
+  opacity: 0.8;
+}
+
+
+.saveButton {
+  background-color: #4caf50;
+  color: white;
+}
+
+.saveButton:hover {
+  opacity: 0.8;
+}
+
+
+.deleteButton {
+  background-color: #e57373;
+  color: white;
+}
+
+.deleteButton:hover {
+  opacity: 0.8;
+}
+
+#errorMessage {
+  margin-top: 1rem;
+  color: red;
+
+  padding: 0.5rem;
+  font-weight: bold;
+  text-align: center;
+  border-radius: 5px;
+}
+
+  .open_shopping_list{
+   border: 2px solid #66bb6a; 
+    padding: 1rem; 
+    margin-top: 1rem; 
+    border-radius: 8px; 
+    cursor: pointer;}
+
+    
+
+.product-list li{
+  border: solid 2px #66bb6a;
+  padding: 10px 15px;
+  list-style: none;
+  margin: 8px;
+  border-radius: 5px;
+
+}
+.checked-product {
+  text-decoration: line-through;
+  color: red;
+  opacity: 0.7;
+}
+  
+
+
+/* ShoppingLIst setting */
+.setting_view .btn {
+  width: 100%; /* eller f.eks. 250px for fast størrelse */
+  max-width: 300px;
+  padding: 12px;
+  margin: 8px 0;
+  text-align: center;
+  font-size: 16px;
+  border-radius: 5px;
+ background-color: transparent;
+  border: 1px solid #66bb6a;
+  color: #66bb6a;
+  cursor: pointer;
+}
+
+.setting_view .btn:hover{
+  background-color: #e8f5e9;
+  text-decoration: underline;
+}
+
+.setting_view h2{
+  margin-bottom: 8px;
+}
+
+.setting_view {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 90%;
+  max-width: 400px;
+  margin: 0 auto;
+  padding: 1rem;
+}
+
+.input-continer .btn {
+  display: inline;
+}
+
+
+
+/* Mobile version */
+@media screen and (max-width: 600px){
+  .product-table th, .product-table td {
+  padding: 8px;
+}
+
+}
+
+@media (max-width: 390px){
+.product-table th, .product-table td {
+  padding: 4px;
+}
+.setting_view .btn {
+    width: 100%;
+    font-size: 14px;
+  }
+  .setting_view h2{
+    font-size: 18px;
+  margin-bottom: 8px;
+}
+}
+
+@media (max-width: 360px){
+  .product-table th, .product-table td {
+  padding: 2px;
+}
+}
